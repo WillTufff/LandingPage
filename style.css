@@ -6,7 +6,6 @@ Body, HTML, .master {
 .master{
     display: flex;
     flex-direction: column;
-    /* border: 3px solid black; */
     background-color: #E5E7EB;
 }
 
@@ -17,28 +16,54 @@ Body{
 .header {
     display: flex;
     padding: 10px;
-    /* border: 3px solid black; */
     background-color: #1f2937;
     color: white;
     flex-direction: column;
-    border: 3px solid black;
+    font-family:'Roboto';
 }
 
 .headerbottom{
     margin-top: 30px;
     display: flex;
-    /* justify-content: space-between; */
-    border: 3px solid black;
+    justify-content: space-between;
+    
     padding: 20px;
 }
 
 .leftcontent{
-    border: 3px solid red;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 15px;
+}
+
+.leftcontent .title {
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: 900;
+    font-family: 'Roboto';
+}
+
+.headerlogo{
+    font-size: 24px;
+    color: #f9faf8
+}
+
+.leftcontent .body{
+    font-size: 18px;
+    color: E5E7EB;
+}
+
+button{
+    background-color: #3882f6;
+    border-radius: 10px;
+    border: 2px solid #00AA66;
+    padding: 5px 15px 5px 15px;
+    color: white;
 }
 
 .rightcontent{
-    border: 3px solid black;
     flex: 1;
     background-color: gray;
 }
@@ -51,13 +76,10 @@ Body{
 .headertop{
     display: flex;
     justify-content: space-between;
-    border: 3px solid black;
     align-items: center;
     margin-bottom: 50px;
     padding: 20px;
 }
-
-.headertop .header
 
 .header .linklist li {
     display: inline;
