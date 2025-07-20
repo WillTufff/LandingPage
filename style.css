@@ -87,6 +87,11 @@ button{
     margin: 10px;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
 .header .linklist ul {
     padding: 0;
     margin: 10px;
