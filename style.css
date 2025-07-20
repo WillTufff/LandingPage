@@ -1,16 +1,13 @@
-Body, HTML, .master {
+Body, HTML{
     width: 100vw; /* 100% of the viewport width */
-  height: 100vh; /* 100% of the viewport height */
+    height: 100vh; /* 100% of the viewport height */
+    margin: 0;
+    padding: 0;
 }
 
 .master{
     display: flex;
     flex-direction: column;
-    background-color: #E5E7EB;
-}
-
-Body{
-    background-color: #1f2937;
 }
 
 .header {
@@ -65,7 +62,6 @@ button{
 
 .rightcontent{
     flex: 1;
-    background-color: gray;
 }
 
 .rightcontent img{
@@ -96,11 +92,93 @@ button{
     margin: 10px;
 }
 
-.footer{
-    margin-top: auto;
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.main .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.main .title{
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.pair{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: wrap;
+}
+
+.pair .image img {
+    width: 150px;
+    height: 150px;
+    border: 3px solid red;
+}
+
+.pair .text{
+    align-self: center;
+}
+
+.action{
     display: flex;
     justify-content: center;
-    /* border: 3px solid black; */
+    align-items: center;
+    padding: 50px;
+}
+
+.action .acontent .left-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.acontent{
+    display: flex;
+    background-color: #3882F6;
+    padding: 20px 80px;
+    border-radius: 10px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.abutton button{
+    border: 1px solid white;
+    margin-left: 20px;
+}
+
+.atitle{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.quote{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 150px 30px 150px;
+    background-color: #e5e7eb;
+}
+
+.quotetext{
+    font-size: 36px;
+}
+
+.quotename{
+    align-self: flex-end;
+}
+
+
+.footer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
     padding: 20px;
     background-color: #1f2937;
     color: white;
